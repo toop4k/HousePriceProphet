@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimación de casas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>¿Conoces el valor de tu hogar?</h1>
+    <p>Conocelo con nosotros:</p>
+    <form action="prediccion.php" method="POST">
+        <label for="banos">Número de Baños:</label>
+        <input type="number" id="banos" name="banos" value="0" required><br><br>
+
+        <label for="m2_edificados">Metros Cuadrados Edificados:</label>
+        <input type="number" id="m2_edificados" name="m2_edificados" value="0" required><br><br>
+
+        <label for="dormitorios">Número de Dormitorios:</label>
+        <input type="number" id="dormitorios" name="dormitorios" value="0" required><br><br>
+
+        <label for="garajes">Número de Garajes:</label>
+        <input type="number" id="garajes" name="garajes" value="0" required><br><br>
+
+        <label for="plantas">Número de Plantas:</label>
+        <input type="number" id="plantas" name="plantas" value="0" required><br><br>
+
+        <label for="condominio">Condominio (1 si es sí, 0 si es no):</label>
+        <input type="number" id="condominio" name="condominio" min="0" max="1" value="0" required><br><br>
+
+        <label for="tipo_Casa">Es Casa (1 si es casa, 0 si es no):</label>
+        <input type="number" id="tipo_Casa" name="tipo_Casa" min="0" max="1" value="0" required><br><br>
+
+        <label for="tipo_Departamento">Es Departamento (1 si es casa, 0 si es no):</label>
+        <input type="number" id="tipo_Casa" name="tipo_Departamento" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Centro">Zona Centro (1 si es sí, 0 si es no):</label>
+        <input type="number" id="zona_Centro" name="zona_Centro" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Ciudadelas">Zona Ciudadelas:</label>
+        <input type="number" id="zona_Ciudadelas" name="zona_Ciudadelas" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Doble_via_la_guardia">Zona Doble vía la guardia:</label>
+        <input type="number" id="zona_Doble_via_la_guardia" name="zona_Doble_via_la_guardia" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Equipetrol">Zona Equipetrol:</label>
+        <input type="number" id="zona_Equipetrol" name="zona_Equipetrol" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Este">Zona Este:</label>
+        <input type="number" id="zona_Este" name="zona_Este" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Hamacas">Zona Hamacas:</label>
+        <input type="number" id="zona_Hamacas" name="zona_Hamacas" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Las_palmas">Zona Las Palmas:</label>
+        <input type="number" id="zona_Las_palmas" name="zona_Las_palmas" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Norte">Zona Norte:</label>
+        <input type="number" id="zona_Norte" name="zona_Norte" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Oeste">Zona Oeste:</label>
+        <input type="number" id="zona_Oeste" name="zona_Oeste" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Polanco">Zona Polanco:</label>
+        <input type="number" id="zona_Polanco" name="zona_Polanco" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Remanso">Zona Remanso:</label>
+        <input type="number" id="zona_Remanso" name="zona_Remanso" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Sur">Zona Sur:</label>
+        <input type="number" id="zona_Sur" name="zona_Sur" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Urbari">Zona Urbari:</label>
+        <input type="number" id="zona_Urbari" name="zona_Urbari" min="0" max="1" value="0" required><br><br>
+
+        <label for="zona_Urubó">Zona Urubó:</label>
+        <input type="number" id="zona_Urubó" name="zona_Urubó" min="0" max="1" value="0" required><br><br>
+        
+        <label for="estado_A_estrenar">Estado A estrenar:</label>
+        <input type="number" id="estado_A_estrenar" name="estado_A_estrenar" min="0" max="1" value="0" required><br><br>
+
+        <label for="estado_A_reciclar">Estado A reciclar:</label>
+        <input type="number" id="estado_A_reciclar" name="estado_A_reciclar" min="0" max="1" value="0" required><br><br>
+
+        <label for="estado_Buen_estado">Estado Buen estado:</label>
+        <input type="number" id="estado_Buen_estado" name="estado_Buen_estado" min="0" max="1" value="0" required><br><br>
+
+        <label for="estado_En_Pozo">Estado En Pozo:</label>
+        <input type="number" id="estado_En_Pozo" name="estado_En_Pozo" min="0" max="1" value="0" required><br><br>
+
+        <label for="estado_En_construcción">Estado En construcción:</label>
+        <input type="number" id="estado_En_construcción" name="estado_En_construcción" min="0" max="1" value="0" required><br><br>
+
+        <label for="estado_Excelente_estado">Estado Excelente estado:</label>
+        <input type="number" id="estado_Excelente_estado" name="estado_Excelente_estado" min="0" max="1" value="0" required><br><br>
+
+        <label for="estado_Requiere_mantenimiento">Estado Requiere mantenimiento:</label>
+        <input type="number" id="estado_Requiere_mantenimiento" name="estado_Requiere_mantenimiento" min="0" max="1" value="0" required><br><br>
+
+        <label for="estado_Sin_Definir">Estado Sin Definir:</label>
+        <input type="number" id="estado_Sin_Definir" name="estado_Sin_Definir" min="0" max="1" value="0" required><br><br>
+
+        <input type="submit" value="Obtener Predicción">
+    </form>
+
+
+</body>
+</html>
